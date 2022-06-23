@@ -1,0 +1,114 @@
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.telaLogin {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    
+}
+.telaLogin input {
+    padding: 5px 15px;
+    font-size: 12px;
+    min-width: 200px;
+    margin-bottom: 5px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    color: #8e8e8e;
+    border-radius: 5px;
+}
+.telaLogin button {
+    margin:15px 0 15px ;
+    background-color: #a9dfff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 230px;
+    color: #ffffff;
+}
+.telaLogin button:hover{
+    background-color: #0095f6;
+}
+.instagram-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    width: 40%;
+    max-width: 450px;
+    min-height: 34rem;
+}
+.group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 90%;
+    padding: 1.5rem 0;
+    border: 1px solid lightgray;
+    
+}
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+a, a:visited, a:hover, a:active {
+    color: #0095f6;
+    text-decoration: none;
+}
+.facebook-link a{
+    color: #385185;
+}
+.forgotPassword a{
+    color: #262626;
+}
+.getApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.download-button {
+    height: 40px;
+}
+@media (max-width: 1260px) {
+    .telaLogin {
+        width: 100%;
+    }
+    .instagram-box {
+        width: 100%;
+    }
+}
+@media (max-width: 910px) {
+    body {
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .telaLogin {
+        width: 90%;
+    }
+    .instagram-box {
+        width: 100%;
+    }
+    .instagram-phone {
+        display: none;
+    }
+    .group {
+        border: none;
+    }
+}
